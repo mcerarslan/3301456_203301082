@@ -7,7 +7,11 @@ import 'package:mceapp/Login_screen.dart';
 
 void main() async{
 WidgetsFlutterBinding.ensureInitialized();
- await Firebase.initializeApp();
+ await Firebase.initializeApp(options: FirebaseOptions(
+     apiKey: "AIzaSyAyYFSS1Q7nUQnya5YSNIGgBnAChWiq6lw",
+     appId: "1:876152242832:android:eced82baacb52979604e15",
+     messagingSenderId: "",
+     projectId: "mce-firebase-setup"));
   runApp(const MceApp(),
 
   );
